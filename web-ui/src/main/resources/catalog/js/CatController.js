@@ -99,7 +99,7 @@ goog.require('gn_alert');
           'showGNName': true
         },
         'home': {
-          'enabled': true,
+          'enabled': false,
           'appUrl': '../../{{node}}/{{lang}}/catalog.search#/home',
           'fluidLayout': true
         },
@@ -114,6 +114,28 @@ goog.require('gn_alert');
           'defaultSearchString': '',
           'facetTabField': '',
           'facetConfig': [
+            // {"key":"type","name":"type","label":"types","pageSize":5000},
+            {"key":"_mdActions","name":"mdActions","label":"mdActions","pageSize":5000},
+            {"key":"topicCat","name":"topicCat","label":"topicCats","pageSize":5000},
+            {"key":"inspirethemeuri","name":"inspireThemeURI","label":"inspireThemesURI","pageSize":5000},
+            {"key":"keyword","name":"keyword","label":"keywords","pageSize":5000},
+            // {"key":"orgName","name":"orgName","label":"orgNames","pageSize":5000},
+            // {"key":"_source","name":"sourceCatalog","label":"sourceCatalog","pageSize":5000},
+            // {"key":"createDateYear","name":"createDateYear","label":"createDateYears","pageSize":5000},
+            // {"key":"format","name":"format","label":"formats","pageSize":5000},
+            {"key":"cl_spatialRepresentationType","name":"spatialRepresentationType","label":"spatialRepresentationTypes","pageSize":5000},
+            {"key":"cl_maintenanceAndUpdateFrequency","name":"maintenanceAndUpdateFrequency","label":"maintenanceAndUpdateFrequencies","pageSize":5000},
+            {"key":"cl_status","name":"status","label":"status","pageSize":5000},
+            {"key":"serviceType","name":"serviceType","label":"serviceTypes","pageSize":5000},
+            {"key":"denominator","name":"denominator","label":"denominators","pageSize":5000},
+            {"key":"resolution","name":"resolution","label":"resolutions","pageSize":5000}
+            // {
+            // key: 'createDateYear',
+            // labels: {
+            //   eng: 'Published',
+            //   fre: 'Publication'
+            // }}
+            //
             // {
             // key: 'createDateYear',
             // labels: {

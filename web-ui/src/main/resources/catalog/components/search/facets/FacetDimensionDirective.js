@@ -98,12 +98,14 @@
           scope.activeTab = null;
           scope.isTabMode = angular.isDefined(attrs['tabField']);
           scope.initialValues = null;
+          console.log('scope', scope);
           if (scope.tabField) {
             // Init the facet to use for tabs the first time
             // search is triggered
             scope.$watch('dimension', function(n, o) {
               if (n !== o && scope.dimension.length > 0) {
                 angular.forEach(scope.dimension, function(value) {
+                  console.log('value', value);
                   if (value['@name'] === scope.tabField) {
                     if (scope.tabs == null) {
                       scope.initialValues = value.category;
