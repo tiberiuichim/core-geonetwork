@@ -121,6 +121,9 @@
               ]
           };
 
+          searchSettings.resultTemplate = '../../catalog/components/' +
+              'search/resultsview/partials/viewtemplates/list.html';
+
           // Set custom config in gnSearchSettings
           angular.extend(searchSettings, {
             viewerMap: viewerMap,
