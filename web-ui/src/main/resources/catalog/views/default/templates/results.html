@@ -1,6 +1,6 @@
 <div data-ng-search-form=""
      data-runSearch="true">
-  <div data-ng-include="'../../catalog/views/default/templates/searchForm.html'"></div>
+  <!-- <div data&#45;ng&#45;include="'../../catalog/views/default/templates/searchForm.html'"></div> -->
 
   <div gn-grid-related-query="searchResults.records"></div>
   <div class="row gn-row-results">
@@ -38,6 +38,7 @@
 
       <div class="col-md-9 container-fluid">
       <div class="row gn-row-tools">
+        <div data-ng-include="'../../catalog/views/default/templates/searchForm.html'"></div>
         <div class="col-xs-12 col-md-9"
             data-gn-facet-dimension-list="searchResults.dimension"
             data-params="searchObj.params"
@@ -108,11 +109,11 @@
     </div>
   </div>
 
-  <div data-gn-map-field="searchObj.searchMap"
-       data-gn-map-field-geom="searchObj.params.geometry"
-       data-gn-map-field-opt="searchObj.mapfieldOption"
-       class="gn-search-map hidden-xs">
-  </div>
+  <!-- <div data&#45;gn&#45;map&#45;field="searchObj.searchMap" -->
+  <!--      data&#45;gn&#45;map&#45;field&#45;geom="searchObj.params.geometry" -->
+  <!--      data&#45;gn&#45;map&#45;field&#45;opt="searchObj.mapfieldOption" -->
+  <!--      class="gn&#45;search&#45;map hidden&#45;xs"> -->
+  <!-- </div> -->
 
   <!-- <button data&#45;ng&#45;click="toggleMap()" -->
   <!--         title="{{'toggleMiniMap' | translate}}" -->

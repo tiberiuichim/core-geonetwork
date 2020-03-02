@@ -137,31 +137,31 @@
   <!-- XFrameOptionsFilter to avoid Clickjacking attacks.
      See https://www.owasp.org/index.php/Clickjacking_Defense_Cheat_Sheet.
   -->
-  <filter>
-    <filter-name>XFrameOptionsFilter</filter-name>
-    <filter-class>
-      org.fao.geonet.web.XFrameOptionsFilter
-    </filter-class>
-    <!-- Mode: DENY, SAMEORIGIN, ALLOW-FROM. Any other value will default to DENY
-          - DENY: prevents any domain from framing the content.
-          - SAMEORIGIN, which only allows the current site to frame the content.
-          - ALLOW-FROM uri, which permits the specified 'uri' to frame this page.
-            Not all browsers support this mode.
-    -->
-    <init-param>
-      <param-name>mode</param-name>
-      <param-value>DENY</param-value>
-    </init-param>
-    <!-- Allowed url. Used in ALLOW-FROM mode only -->
-    <!--<init-param>
-      <param-name>url</param-name>
-      <param-value>http://localhost:8888/</param-value>
-    </init-param>-->
-  </filter>
-  <filter-mapping>
-    <filter-name>XFrameOptionsFilter</filter-name>
-    <url-pattern>/*</url-pattern>
-  </filter-mapping>
+  <!-- <filter> -->
+  <!--   <filter&#45;name>XFrameOptionsFilter</filter&#45;name> -->
+  <!--   <filter&#45;class> -->
+  <!--     org.fao.geonet.web.XFrameOptionsFilter -->
+  <!--   </filter&#45;class> -->
+  <!--   <!&#45;&#45; Mode: DENY, SAMEORIGIN, ALLOW&#45;FROM. Any other value will default to DENY -->
+  <!--         &#45; DENY: prevents any domain from framing the content. -->
+  <!--         &#45; SAMEORIGIN, which only allows the current site to frame the content. -->
+  <!--         &#45; ALLOW&#45;FROM uri, which permits the specified 'uri' to frame this page. -->
+  <!--           Not all browsers support this mode. -->
+  <!--   &#45;&#45;> -->
+  <!--   <init&#45;param> -->
+  <!--     <param&#45;name>mode</param&#45;name> -->
+  <!--     <param&#45;value>DENY</param&#45;value> -->
+  <!--   </init&#45;param> -->
+  <!--   <!&#45;&#45; Allowed url. Used in ALLOW&#45;FROM mode only &#45;&#45;> -->
+  <!--   <!&#45;&#45;<init&#45;param> -->
+  <!--     <param&#45;name>url</param&#45;name> -->
+  <!--     <param&#45;value>http://localhost:8888/</param&#45;value> -->
+  <!--   </init&#45;param>&#45;&#45;> -->
+  <!-- </filter> -->
+  <!-- <filter&#45;mapping> -->
+  <!--   <filter&#45;name>XFrameOptionsFilter</filter&#45;name> -->
+  <!--   <url&#45;pattern>/*</url&#45;pattern> -->
+  <!-- </filter&#45;mapping> -->
 
 
   <!-- Resources servlet -->
